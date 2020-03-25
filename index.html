@@ -7,68 +7,98 @@
     </head>
 
     <body>
-        <h1>Wesley Davison</h1><br>
-
-        <div>
+        
+        <!-- Use for linking to other pages -->
+        <header>
+            <h1>Wesley Davison</h1><br>
             <nav>
-                <!-- Use for linking to other pages -->
                 <a href="#aboutme">About me</a><br>
                 <a href="#info">Academics and Extracurriculars</a><br>
                 <a href="#music">Favorite Music</a><br><br>
             </nav>
-        </div>
+        </header>
         
-            
-        <div id="aboutme">
+        <main>
+        <!-- About Me -->
+        <section>
             <h2>About me</h2>
-            <p>My name is Wesley Davison. I am a senior attending Westview High school. I am 18 years old and I enjoy
+            <article>
+                <p>My name is Wesley Davison. I am a senior attending Westview High school. I am 18 years old and I enjoy
                 a variety of hobbies such as gaming, playing the tuba, shooting hoops, or hanging out at parks
-            </p> 
-            <p>I am hoping to study computer science in college, with a possible emphasis in data sciences.</p>
+                </p> 
+                <p>I am hoping to study computer science in college, with a possible emphasis in data sciences.</p>
+                
+            </article>
             <br><br>
-        </div>
+        </section>
 
-        <div id="info">
+        <!-- Academics and Extracurriculars -->
+        <section>
             <h2>Academics and Extracurriculars</h2> 
             <h4>Academics</h4>
-            <ul>
-                <li>4.2 Weighted GPA</li>
-                <li>3.97 Unweighted GPA</li>
-                <li>1520 SAT</li>
-                    <ul>
-                        <li>720 R&W</li>
-                        <li>800 Math</li>
-                    </ul>
-                <li>AP Tests</li>
-                  <ul>
-                    <li>5 on AP Calculus AB and BC</li>
-                    <li>5 on AP Computer Science A</li>
-                    <li>4 on AP Chemistry</li>
-                  </ul>
-                <li>Multivariable Calculus (Palomar College)</li>
-            </ul>
+            <article>
+                <ul>
+                    <li>4.2 Weighted GPA</li>
+                    <li>3.97 Unweighted GPA</li>
+                    <li>1520 SAT</li>
+                        <ul>
+                            <li>720 R&W</li>
+                            <li>800 Math</li>
+                        </ul>
+                    <li>AP Tests</li>
+                        <ul>
+                            <li>5 on AP Calculus AB and BC</li>
+                            <li>5 on AP Computer Science A</li>
+                            <li>4 on AP Chemistry</li>
+                        </ul>
+                    <li>Multivariable Calculus (Palomar College)</li>
+                </ul>
+            </article>
             <h4>Extracurriculars</h4>
-            <ul>
-                <li>Competitve Marching Band </li>
-                <li>Leadership as Band Librarian</li>
-                <li>Computer Science Tutor</li>
-                <li>Lights Crew for Theatre</li>
-            </ul>
+            <article>
+                <ul>
+                    <li>Competitve Marching Band </li>
+                    <li>Leadership as Band Librarian</li>
+                    <li>Computer Science Tutor</li>
+                    <li>Lights Crew for Theatre</li>
+                </ul>
+            </article>
             <br><br>
-        </div>
+        </section>
 
-        <div id="music">
+        <!-- Music List -->
+        <section>
             <h2>Favorite Albums</h2>
-            <p>A small collection</p>
-            <ol>
-                <li>Late Registration - Kanye West</li>
-                <li>To Pimp a Butterfly - Kendrick Lamar</li>
-                <li>La Segunda Luz Del Dia - Ramona</li>
-                <li>IGOR - Tyler the Creator</li>
-                <li>The Slow Rush - Tame Impala</li>
-            </ol>
+            <article>
+                <p>A small collection</p>
+                <ol>
+                    <li>Late Registration - Kanye West</li>
+                    <li>To Pimp a Butterfly - Kendrick Lamar</li>
+                    <li>La Segunda Luz Del Dia - Ramona</li>
+                    <li>IGOR - Tyler the Creator</li>
+                    <li>The Slow Rush - Tame Impala</li>
+                </ol>
+            </article>
             <br><br>
-        </div>
+        </section>
+        </main>
+
+        <!-- Form -->
+        <section>
+            <h2>Music Reccomendations</h2>
+            <p>Tell me your favorite albums!</p>
+            <form method="GET" action="/results.txt">
+                <label for="album">Album:</label>
+                <input type="text" name="album" id="album" required>
+                <label for="artist">Artist:</label>
+                <input type="text" name="artist" id="artist" required>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+            
+        </section>
+        <footer>
+            <p>Created by Wesley Davison, obviously.</p>
+        </footer>
 
     </body> 
      
