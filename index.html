@@ -3,24 +3,32 @@
 
     <!-- Title of the webpage -->
     <head>
+        <!-- Basic Page Needs
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="utf-8">
         <title>Wesley's Website</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     </head>
 
-    <body>
-        
+    <body >
         <!-- Use for linking to other pages -->
+        
         <header>
-            <h1>Wesley Davison</h1><br>
             <nav>
-                <a href="#aboutme">About me</a><br>
-                <a href="#info">Academics and Extracurriculars</a><br>
-                <a href="#music">Favorite Music</a><br><br>
+                <ul>
+                    <li><a href="#aboutme">About me</a><br></li>
+                    <li><a href="#info">Academics and Extracurriculars</a></li>
+                    <li><a href="music.html">Favorite Music</a></li>
+                </ul> 
             </nav>
+            <h1>Wesley Davison</h1><br>
+            
         </header>
         
-        <main>
+        <main class="container">
         <!-- About Me -->
-        <section>
+        <section class="">
             <h2>About me</h2>
             <article>
                 <p>My name is Wesley Davison. I am a senior attending Westview High school. I am 18 years old and I enjoy
@@ -33,7 +41,7 @@
         </section>
 
         <!-- Academics and Extracurriculars -->
-        <section>
+        <section class="">
             <h2>Academics and Extracurriculars</h2> 
             <h4>Academics</h4>
             <article>
@@ -66,36 +74,9 @@
             <br><br>
         </section>
 
-        <!-- Music List -->
-        <section>
-            <h2>Favorite Albums</h2>
-            <article>
-                <p>A small collection</p>
-                <ol>
-                    <li>Late Registration - Kanye West</li>
-                    <li>To Pimp a Butterfly - Kendrick Lamar</li>
-                    <li>La Segunda Luz Del Dia - Ramona</li>
-                    <li>IGOR - Tyler the Creator</li>
-                    <li>The Slow Rush - Tame Impala</li>
-                </ol>
-            </article>
-            <br><br>
-        </section>
-        </main>
+        
 
-        <!-- Form -->
-        <section>
-            <h2>Music Reccomendations</h2>
-            <p>Tell me your favorite albums!</p>
-            <form method="GET" action="/results.txt">
-                <label for="album">Album:</label>
-                <input type="text" name="album" id="album" required>
-                <label for="artist">Artist:</label>
-                <input type="text" name="artist" id="artist" required>
-                <input type="submit" value="Submit" id="submit">
-            </form>
-            
-        </section>
+       
         <footer>
             <p>Created by Wesley Davison, obviously.</p>
         </footer>
