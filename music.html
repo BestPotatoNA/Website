@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+     <!-- Title of the webpage -->
+     <head>
+        <title>Favorite Music</title>
+    </head>
+    <body>
+        <main>
+            <!-- Music List -->
+            <section>
+                <h2>Favorite Albums</h2>
+                <article>
+                    <p>A small collection</p>
+                    <ol>
+                        <li>Late Registration - Kanye West</li>
+                        <li>To Pimp a Butterfly - Kendrick Lamar</li>
+                        <li>La Segunda Luz Del Dia - Ramona</li>
+                         <li>IGOR - Tyler the Creator</li>
+                        <li>OK Computer - Radiohead</li>
+                    </ol>
+                </article>
+                <br><br>
+            </section>
+            <!-- Form -->
+            <section>
+                <h2>Music Reccomendations</h2>
+                <p>Tell me your favorite albums!</p>
+                <form method="GET" action="/results.txt">
+                    <label for="album">Album:</label>
+                    <input type="text" name="album" id="album" required>
+                    <label for="artist">Artist:</label>
+                    <input type="text" name="artist" id="artist" required>
+                    <input type="submit" value="Submit" id="submit">
+                </form>
+                <br><br>
+            </section>
+        </main>
+        <nav>
+            <a href="index.html">Main Page</a><br> 
+        </nav>
+    </body>
+</html>
